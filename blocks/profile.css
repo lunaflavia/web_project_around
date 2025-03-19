@@ -1,0 +1,64 @@
+.profile {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.profile__name {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  margin: 0;
+  /*
+    display: flex;
+    align-items: center; */
+}
+
+.profile__edit-button {
+    display: flex;
+    align-items: baseline;
+}
+
+i.profile__edit-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/Edit-Button.svg");
+  margin-left: 18px;
+}
+
+i.profile__edit-icon:hover {
+    background-image: url("../images/Edit-Button-hover.svg");
+  }
+
+.profile__description {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 16px 0;
+  }
+  
+i.profile__add-button {
+    width: 150px;
+    height: 50px;
+    background-image: url("../images/Add-Button.svg");
+  }
+
+  i.profile__add-button:hover {
+    width: 150px;
+    height: 50px;
+    background-image: url("../images/Add-Button-hover.svg");
+  }

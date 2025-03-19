@@ -1,0 +1,17 @@
+.header {
+    padding: 45px 0 40px;
+    border-bottom: 1px solid #545454;
+  }
+  
+  .header__title {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .header__small-title {
+    font-weight: 400;
+    font-size: 12px;
+    vertical-align: text-top;
+    margin-left: 4px;
+  }

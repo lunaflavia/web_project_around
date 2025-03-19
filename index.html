@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Around The U.S.</title>
+    <title>Around The EU</title>
     <meta
       name="description"
       content="Página interativa para adicionar, remover e curtir fotos."
     />
     <meta name="author" content="Luna Costa" />
     <meta name="keywords" content="galeria, fotos, paisagens, interatividade" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="./favicon-32x32.png" />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
   <body>
     <div class="page">
       <!-- Header -->
       <header class="header">
-        <h1 class="header__title">Around<span class="header__small-title">The EU</span></h1>
+        <h1 class="header__title">
+          Around<span class="header__small-title">The EU</span>
+        </h1>
       </header>
 
       <main class="content">
@@ -30,15 +32,18 @@
             class="profile__image"
           />
           <div class="profile__info">
-            <h2 class="profile__name">Luna Costa</h2>
+            <div class="profile__edit-button">
+              <h2 class="profile__name">Luna Costa</h2>
+              <i class="profile__edit-icon"></i>
+            </div>
             <p class="profile__description">Exploradora</p>
           </div>
-          <button class="profile__add-button" type="button">+</button>
+          <i class="profile__add-button"></i>
         </section>
 
         <!-- Photo grid -->
-        <section class="places">
-          <ul class="places__list">
+        <section class="elements">
+          <ul class="elements__list">
             <!-- Berlengas Card -->
             <li class="card">
               <img
