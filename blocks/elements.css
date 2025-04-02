@@ -1,56 +1,70 @@
 .elements {
-    padding-bottom: 67px;
-  }
-  
+  padding: 0;
+}
+
 .elements__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
-    gap: 20px 17px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  max-width: 880px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 17px;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+}
 
 /* ---------- Card ---------- */
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .card__image {
-    width: 100%;
-    height: 282px;
-  }
-  
-  .card__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 15px 31px 21px;
-  }
-  
-  .card__title {
-    font-weight: 900;
-    font-size: 24px;
-    color: #000;
-    margin: 0;
-    max-width: 246px;
-  }
-  
-  .card__like-button {
-    width: 21px;
-    height: 19px;
-    background-image: url('../images/heart-icon-disabled.svg');
-    background-color: transparent;
-    border: none;
-  }
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 282px;
+}
 
-  .card__like-button:hover {
-    background-image: url('../images/heart-icon-hover.svg');
-    cursor: pointer;
-  }
+.card__image {
+  width: 100%;
+  height: 282px;
+}
 
-  .card__like-button.card__like-button_active {
-    background-image: url('../images/heart-icon-active.svg');
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 31px 21px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  max-width: 246px;
+}
+
+.card__like-button {
+  width: 21px;
+  height: 19px;
+  background-image: url("../images/heart-icon-disabled.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button:hover {
+  background-image: url("../images/heart-icon-hover.svg");
+  cursor: pointer;
+}
+
+.card__like-button.card__like-button_active {
+  background-image: url("../images/heart-icon-active.svg");
+}
+
+@media screen and (max-width: 500px) {
+  .elements__list {
+    justify-content: center;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .elements__list {
+
+  }
+}
