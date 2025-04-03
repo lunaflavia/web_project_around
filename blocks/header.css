@@ -1,0 +1,35 @@
+.header {
+  padding: 45px 200px 40px;
+  border-bottom: 1px solid #545454;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+}
+
+.header__small-title {
+  font-weight: 400;
+  font-size: 12px;
+  vertical-align: text-top;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 1135px) {
+  .header {
+    padding: 45px 147px 40px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .header {
+    padding: 45px 82px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 28px 108px 32px 27px;
+  }
+}
