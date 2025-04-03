@@ -1,5 +1,6 @@
 .elements {
   padding: 0;
+  justify-items: center;
 }
 
 .elements__list {
@@ -8,8 +9,8 @@
   flex-wrap: wrap;
   gap: 20px 17px;
   list-style: none;
-  justify-content: center;
   margin: 0;
+  padding: 0;
 }
 
 /* ---------- Card ---------- */
@@ -57,14 +58,14 @@
   background-image: url("../images/heart-icon-active.svg");
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 985px) {
   .elements__list {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .elements__list {
-
+    justify-content: center;
   }
 }
