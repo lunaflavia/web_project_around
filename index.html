@@ -34,7 +34,7 @@
           <div class="profile__info">
             <div class="profile__edit-button">
               <h2 class="profile__name">Luna Costa</h2>
-              <i class="profile__edit-icon"></i>
+              <a class="profile__edit-icon"></a>
             </div>
             <p class="profile__description">Exploradora</p>
           </div>
@@ -118,6 +118,33 @@
           </ul>
         </section>
       </main>
+
+      <!-- Form -->
+      <div class="modal" id="edit-profile-modal">
+        <div class="modal__container">
+          <button class="modal__close-button" type="button">&times;</button>
+          <h2 class="modal__title">Editar perfil</h2>
+          <form class="modal__form" id="profile-form">
+            <input
+              type="text"
+              class="modal__input"
+              id="profile-name"
+              name="name"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="text"
+              class="modal__input"
+              id="profile-description"
+              name="description"
+              placeholder="Sobre mim"
+              required
+            />
+            <button type="submit" class="modal__submit-button">Salvar</button>
+          </form>
+        </div>
+      </div>
 
       <!-- Footer -->
       <footer class="footer">

@@ -31,14 +31,14 @@
   align-items: baseline;
 }
 
-i.profile__edit-icon {
+.profile__edit-icon {
   width: 24px;
   height: 24px;
   background-image: url("../images/Edit-Button.svg");
   margin-left: 18px;
 }
 
-i.profile__edit-icon:hover {
+.profile__edit-icon:hover {
   background-image: url("../images/Edit-Button-hover.svg");
 }
 
@@ -101,7 +101,7 @@ i.profile__edit-icon:hover {
     font-size: 14px;
   }
 
-  i.profile__edit-icon {
+  .profile__edit-icon {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: bottom;
