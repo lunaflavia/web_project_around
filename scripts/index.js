@@ -7,6 +7,7 @@ const profileNameInput = document.querySelector('#profile-name');
 const profileDescriptionInput = document.querySelector('#profile-description');
 const profileName = document.querySelector('.profile__name');
 const profileDescription = document.querySelector('.profile__description');
+const likeButtons = document.querySelectorAll('.card__like-button');
 
 // Initialize form with current values
 profileNameInput.value = profileName.textContent.trim();
@@ -50,3 +51,11 @@ editProfileModal.addEventListener('click', (evt) => {
     closeModal();
   }
 });
+
+// Add click event listener to each button
+likeButtons.forEach((button) => {
+    button.addEventListener('click', function() {
+      // Toggle active class on the button
+      this.classList.toggle('card__like-button_active');
+    });
+  });
